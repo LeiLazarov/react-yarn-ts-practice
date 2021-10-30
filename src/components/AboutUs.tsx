@@ -1,5 +1,5 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
 
 const AboutUs = () => {
     const history = useHistory();
@@ -10,11 +10,9 @@ const AboutUs = () => {
                 <title>About us</title>
             </head>
 
-            <main >
-                <h1>
-                    About us
-                </h1>
-                <button onClick={() => history.push('/')}>Go back to Home</button>
+            <main>
+                <h1>About us</h1>
+                <button onClick={() => history.push("/")}>Go back to Home</button>
             </main>
         </div>
     );
