@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import Header from "../header/Header";
 
 const LayoutContainer = styled.div``;
 
@@ -23,7 +24,7 @@ DefaultLayout.propTypes = {
 };
 
 DefaultLayout.defaultProps = {
-    topBar: null,
+    topBar: <Header />,
     navigation: null,
     footer: null
 };

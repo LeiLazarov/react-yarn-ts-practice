@@ -2,11 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-    height: 78px;
+    height: 60px;
 `;
 
+const Title = styled.div``;
+
 const Header = (props: any) => {
-    return <HeaderContainer>header</HeaderContainer>;
+    return (
+        <HeaderContainer>
+            <Title>FC&apos;s blog</Title>
+        </HeaderContainer>
+    );
 };
 
 export default Header;
