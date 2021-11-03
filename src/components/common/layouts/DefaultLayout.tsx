@@ -11,11 +11,12 @@ const BodyContainer = styled.div`
 `;
 
 const DefaultLayout = (props: any) => {
-    const { children, topBar, footer } = props;
+    const { children, topBar, navigation, footer } = props;
 
     return (
         <LayoutContainer>
             {topBar}
+            {navigation}
             <BodyContainer>{children}</BodyContainer>
             {footer}
         </LayoutContainer>
