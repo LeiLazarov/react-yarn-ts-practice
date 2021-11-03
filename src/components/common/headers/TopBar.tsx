@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderContainer = styled.div`
+const TopBarContainer = styled.div`
     height: 60px;
+    background-color: ;
 `;
 
 const Title = styled.div``;
 
-const Header = (props: any) => {
+const TopBar = (props: any) => {
     return (
-        <HeaderContainer>
+        <TopBarContainer>
             <Title>FC&apos;s blog</Title>
-        </HeaderContainer>
+        </TopBarContainer>
     );
 };
 
-export default Header;
+export default TopBar;

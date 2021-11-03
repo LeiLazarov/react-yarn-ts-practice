@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import Header from "../header/Header";
+import TopBar from "../headers/TopBar";
+import Footer from "../footer/Footer";
 
 const LayoutContainer = styled.div``;
+
+const BodyContainer = styled.div`
+    min-height: 1000px;
+`;
 
 const DefaultLayout = (props: any) => {
     const { children, topBar, footer } = props;
@@ -11,7 +16,7 @@ const DefaultLayout = (props: any) => {
     return (
         <LayoutContainer>
             {topBar}
-            <main>{children}</main>
+            <BodyContainer>{children}</BodyContainer>
             {footer}
         </LayoutContainer>
     );
@@ -24,9 +29,9 @@ DefaultLayout.propTypes = {
 };
 
 DefaultLayout.defaultProps = {
-    topBar: <Header />,
+    topBar: <TopBar />,
     navigation: null,
-    footer: null
+    footer: <Footer />
 };
 
 export default DefaultLayout;
